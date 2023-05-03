@@ -5,6 +5,7 @@ go 1.19
 require (
 	github.com/Masterminds/squirrel v1.5.4
 	github.com/go-sql-driver/mysql v1.7.1
+	google.golang.org/protobuf v1.30.0
 )
 
 require (
