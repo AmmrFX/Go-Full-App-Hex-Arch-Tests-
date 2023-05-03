@@ -2,7 +2,7 @@ package rpc
 
 import (
 	"hex/internal/adapters/framework/left/grpc/pb"
-	"hex/internal/port"
+	"hex/internal/ports"
 	"log"
 	"net"
 
@@ -10,10 +10,10 @@ import (
 )
 
 type Adapter struct {
-	api port.APIPort
+	api ports.APIPort
 }
 
-func NewAdapter(api port.APIPort) *Adapter {
+func NewAdapter(api ports.APIPort) *Adapter {
 	return &Adapter{
 		api: api,
 	}
