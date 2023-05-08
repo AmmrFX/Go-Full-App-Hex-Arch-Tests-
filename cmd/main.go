@@ -1,12 +1,12 @@
 package main
 
 import (
-	"fmt"
 	"hex/internal/adapters/app/api"
 	"hex/internal/adapters/core/arithmetic"
-	gRBC "hex/internal/adapters/framework/left/grpc"
 	"hex/internal/adapters/framework/right/db"
 	"hex/internal/ports"
+
+	gRBC "hex/internal/adapters/framework/left/grpc"
 	"log"
 	"os"
 	//"hex/internal/ports"
@@ -35,10 +35,10 @@ func main() {
 	// ports
 	// var core ports.ArithmeticPort
 	// core = arithmetic.NewAdapter()
-	arithAdapter := arithmetic.NewAdapter()
-	result, err := arithAdapter.Addition(1, 3)
-	if err != nil {
-		fmt.Println(err)
-	}
-	fmt.Println(result)
+	// arithAdapter := arithmetic.NewAdapter()
+	// result, err := arithAdapter.Addition(1, 3)
+	// if err != nil {
+	// 	fmt.Println(err)
+	// }
+	// fmt.Println(result)
 }
