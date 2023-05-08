@@ -3,6 +3,7 @@ package rpc
 import (
 	"context"
 	"hex/internal/adapters/framework/left/grpc/pb"
+	"status"
 
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
